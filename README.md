@@ -4,26 +4,18 @@
 <a href="https://goreportcard.com/report/github.com/bayashi/highlightrepo" title="highlightrepo report card" target="_blank"><img src="https://goreportcard.com/badge/github.com/bayashi/highlightrepo" alt="highlightrepo report card"></a>
 <a href="https://pkg.go.dev/github.com/bayashi/highlightrepo" title="Go highlightrepo package reference" target="_blank"><img src="https://pkg.go.dev/badge/github.com/bayashi/highlightrepo.svg" alt="Go Reference: highlightrepo"></a>
 
-`highlightrepo` provides 
+`highlightrepo` provides a filter to highlight repository directory in a path string.
 
 ## Usage
 
-```go
-package main
-
-import (
-    "fmt"
-)
-
-func main() {
-
-}
+```sh
+$ pwd | highlightrepo
 ```
 
 ## Installation
 
 ```cmd
-go get github.com/bayashi/highlightrepo
+go install github.com/bayashi/highlightrepo@latest
 ```
 
 ## License
