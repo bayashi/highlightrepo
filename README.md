@@ -12,10 +12,20 @@
 $ pwd | highlightrepo
 ```
 
-Use `-y` option for `PS1`
+Used cyan to highlight. If you want to set another color, then add `--color` option.
 
 ```sh
-PS1="[\u@\h \$(pwd | highlightrepo -y)]\n\[\e[32m\]\\$\[\e[0m\] "
+$ pwd | highlightrepo --color="red"
+```
+
+Here's [color palette](https://github.com/bayashi/colorpalette/blob/main/colorpalette.go).
+
+### For PS1
+
+Use `-y` option in `PS1` to bypass the check for non-tty output streams
+
+```sh
+PS1="[\u@\h \$(pwd | highlightrepo -y)]\n\$ "
 ```
 
 ## Installation
