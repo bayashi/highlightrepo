@@ -24,6 +24,7 @@ var (
 type options struct {
 	color   string
 	noTilde bool
+	nonTTY   bool
 }
 
 func (cli *runner) parseArgs() *options {
@@ -33,6 +34,7 @@ func (cli *runner) parseArgs() *options {
 	var flagVersion bool
 	flag.StringVarP(&o.color, "color", "c", "cyan", "Color name to highlight")
 	flag.BoolVarP(&o.noTilde, "no-tilde", "t", false, "Not replace home dir path to tilda")
+	flag.BoolVarP(&o.nonTTY, "non-tty", "y", false, "Bypass the check for non-tty output streams")
 	flag.BoolVarP(&flagHelp, "help", "h", false, "Show help (This message) and exit")
 	flag.BoolVarP(&flagVersion, "version", "v", false, "Show version and build command info and exit")
 

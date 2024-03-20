@@ -12,6 +12,12 @@
 $ pwd | highlightrepo
 ```
 
+Use `-y` option for `PS1`
+
+```sh
+PS1="[\u@\h \$(pwd | highlightrepo -y)]\n\[\e[32m\]\\$\[\e[0m\] "
+```
+
 ## Installation
 
 ```cmd
