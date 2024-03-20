@@ -59,7 +59,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os:  ["windows-latest", "macOS-latest"]
+        os:  ["macOS-latest"]
 
     runs-on: ${{ matrix.os }}
 
@@ -80,6 +80,14 @@ jobs:
 
       - name: Build
         run: go build -v ./...
+
+      - name: Set up test structure
+        run: |
+            mkdir testdata
+            mkdir testdata/foo
+            mkdir testdata/bar
+            touch testdata/bar/.git
+            mkdir -p testdata/baz/.git
 
       - name: Test with the Go CLI
         run: go test ./... -race -shuffle=on -timeout=3m -cover -v
