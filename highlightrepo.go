@@ -29,7 +29,7 @@ func NewHighlightrepo(o *options) *highlightrepo {
 		options: o,
 	}
 
-	if o.noTTY {
+	if o.nonTTY {
 		color.NoColor = false
 	}
 
