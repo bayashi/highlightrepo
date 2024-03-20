@@ -25,8 +25,9 @@ Here's [color palette](https://github.com/bayashi/colorpalette/blob/main/colorpa
 Use `-y` option in `PS1` to bypass the check for non-tty output streams
 
 ```sh
-PS1="[\u@\h \$(pwd | highlightrepo -y)]\n\$ "
+PS1="\u \$(pwd | highlightrepo -y)\n\$ "
 ```
+![PS1 example](https://private-user-images.githubusercontent.com/42190/314735198-5cfa4355-bb11-4c5e-aea5-5da031bc4aca.png)
 
 ## Installation
 
