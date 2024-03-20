@@ -45,7 +45,11 @@ jobs:
 
       - name: Test with the Go CLI
         shell: 'script -q -e -c "bash {0}"'
-        run: irir gotest -- go test -v -shuffle=on -timeout=3m -cover ./...
+        run: |
+            pwd
+            ls
+            ls testdata
+            irir gotest -- go test -v -shuffle=on -timeout=3m -cover ./...
 
   test-other:
     strategy:
