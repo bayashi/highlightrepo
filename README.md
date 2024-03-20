@@ -12,7 +12,7 @@
 $ pwd | highlightrepo
 ```
 
-Used cyan to highlight by default. If you want to set another color, then add `--color` option.
+Used cyan to highlight by default. If you want to change, then add `--color` option.
 
 ```sh
 $ pwd | highlightrepo --color="red"
