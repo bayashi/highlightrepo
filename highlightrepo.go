@@ -62,7 +62,7 @@ func (h *highlightrepo) highlightline(line string) error {
 	}
 
 	if _, err := os.Stat(absPath); err != nil {
-		return err
+		return fmt.Errorf("orig %s, abs %s : %w", line, absPath, err)
 	}
 
 	paths := strings.Split(absPath, SEP)

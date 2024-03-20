@@ -24,7 +24,7 @@ var (
 type options struct {
 	color   string
 	noTilde bool
-	nonTTY   bool
+	nonTTY  bool
 }
 
 func (cli *runner) parseArgs() *options {
