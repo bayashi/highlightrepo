@@ -30,6 +30,21 @@ PS1="[\u@\h \$(pwd | highlightrepo -y)]\n\$ "
 
 ## Installation
 
+### Mac
+
+```sh
+brew tap bayashi/tap
+brew install bayashi/tap/highlightrepo
+```
+
+### Binary install
+
+Download binary from here: https://github.com/bayashi/highlightrepo/releases
+
+### Go manual
+
+If you have golang environment:
+
 ```cmd
 go install github.com/bayashi/highlightrepo@latest
 ```
