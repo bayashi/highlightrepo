@@ -28,6 +28,11 @@ func NewHighlightrepo(o *options) *highlightrepo {
 	h := &highlightrepo{
 		options: o,
 	}
+
+	if o.noTTY {
+		color.NoColor = false
+	}
+
 	h.hlColor = colorpalette.Get(o.color)
 
 	return h
