@@ -1,0 +1,26 @@
+builds:
+  - env:
+      - CGO_ENABLED=0
+    id: "irir"
+    binary: irir
+    goos:
+      - linux
+      - darwin
+    ldflags: -s -w -X main.version={{.Version}} -X "main.installFrom=Binary"
+changelog:
+  use: github
+  filters:
+    exclude:
+    - Merge pull request
+    - Merge remote-tracking branch
+    - Merge branch
+brews:
+  - tap:
+      owner: bayashi
+      name: homebrew-tap
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+    folder: Formula
+    homepage: https://github.com/bayashi/highlightrepo
+    description: highlightrepo provides a filter to highlight repository directory in a path string.
+    test: |
+      system "#{bin}/highlightrepo", '--version'
