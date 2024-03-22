@@ -27,7 +27,7 @@ Use `-y` option in `PS1` to bypass the check for non-tty output streams
 ```sh
 PS1="\u \$(pwd | highlightrepo -y)\n\$ "
 ```
-![PS1 example](https://github.com/bayashi/highlightrepo/assets/42190/d7f2ad43-86bd-40cf-a1be-99611d326450)
+![PS1 example](https://github.com/bayashi/highlightrepo/assets/42190/67c65387-a90e-40ad-81a5-4a31421df549)
 
 ## Installation
 
