@@ -6,8 +6,8 @@ require (
 	github.com/bayashi/witness v0.0.18
 	github.com/fatih/color v1.16.0
 	github.com/spf13/pflag v1.0.5
-	golang.org/x/sys v0.18.0 // indirect
-	golang.org/x/term v0.18.0
+	golang.org/x/sys v0.20.0 // indirect
+	golang.org/x/term v0.20.0
 )
 
 require (
