@@ -1,9 +1,10 @@
 module github.com/bayashi/highlightrepo
 
 go 1.21
+toolchain go1.22.5
 
 require (
-	github.com/bayashi/witness v0.0.20
+	github.com/bayashi/witness v0.0.21
 	github.com/fatih/color v1.16.0
 	github.com/spf13/pflag v1.0.5
 	golang.org/x/sys v0.21.0 // indirect
