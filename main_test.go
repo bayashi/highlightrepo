@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	w "github.com/bayashi/witness"
+	a "github.com/bayashi/actually"
 	"github.com/fatih/color"
 )
 
@@ -36,12 +36,12 @@ func TestRunner_OK(t *testing.T) {
 			err := cli.runner(&options{color: "cyan"})
 
 			if err != nil {
-				w.Fail(t, "unexpected error", err)
+				a.Fail(t, "unexpected error", err)
 			}
 
 			g := out.String()
 			if !strings.HasSuffix(g, tt.expect) {
-				w.Fail(t, "Not match suffix", g, tt.expect)
+				a.Fail(t, "Not match suffix", g, tt.expect)
 			}
 		})
 	}
