@@ -1,6 +1,6 @@
 module github.com/bayashi/highlightrepo
 
-go 1.21
+go 1.21.11
 
 require (
 	github.com/bayashi/witness v0.0.20
