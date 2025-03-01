@@ -1,5 +1,5 @@
-github.com/bayashi/actually v0.33.2 h1:rbUu89FCg+UHF092+RWa/S92AADtI1bahJKZtAjno2A=
-github.com/bayashi/actually v0.33.2/go.mod h1:Ke0U2UtW27Ii7WRmcui0T8cyhR5iIzJCOIyGcOqYFxw=
+github.com/bayashi/actually v0.34.0 h1:SZTRR4pZYtd9qlolReyUxvXHvwbrJY1I+xoRgBzCyxw=
+github.com/bayashi/actually v0.34.0/go.mod h1:Ke0U2UtW27Ii7WRmcui0T8cyhR5iIzJCOIyGcOqYFxw=
 github.com/bayashi/colorpalette v0.0.4 h1:1D7+bs/1fIPDv782zZKHwDtCgOT6qCKHN9t9IOrqIHM=
 github.com/bayashi/colorpalette v0.0.4/go.mod h1:VvoV9APBY4B4EkJBFMO9gZa0lsTrKvTe3jYWEXhpU+I=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
