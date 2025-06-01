@@ -1,12 +1,12 @@
 module github.com/bayashi/highlightrepo
 
-go 1.21.11
+go 1.23.0
 
 require (
 	github.com/fatih/color v1.18.0
 	github.com/spf13/pflag v1.0.5
-	golang.org/x/sys v0.30.0 // indirect
-	golang.org/x/term v0.29.0
+	golang.org/x/sys v0.33.0 // indirect
+	golang.org/x/term v0.32.0
 )
 
 require (
