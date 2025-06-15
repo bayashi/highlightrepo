@@ -2,6 +2,8 @@ module github.com/bayashi/highlightrepo
 
 go 1.21.11
 
+toolchain go1.24.1
+
 require (
 	github.com/fatih/color v1.18.0
 	github.com/spf13/pflag v1.0.5
@@ -17,10 +19,10 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 )
 
-require github.com/bayashi/actually v0.33.2
+require github.com/bayashi/actually v0.34.1
 
 require (
-	github.com/google/go-cmp v0.6.0 // indirect
+	github.com/google/go-cmp v0.7.0 // indirect
 	github.com/yassinebenaid/godump v0.11.1 // indirect
 	google.golang.org/protobuf v1.36.2 // indirect
 )
