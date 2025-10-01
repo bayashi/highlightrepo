@@ -19,7 +19,7 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 )
 
-require github.com/bayashi/actually v0.34.1
+require github.com/bayashi/actually v0.36.0
 
 require (
 	github.com/google/go-cmp v0.7.0 // indirect
